@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center;margin-top: 2rem; color: crimson;}
+    .attribution a { color: hsl(0, 0%, 100%); }
+  </style>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+  <div class="rating-component-section"> 
+  <!-- Rating state start -->
+  <article class="rating-wrapper" id="ratingForm">
+    <div class="star-wrapper">
+      <img src="./images/icon-star.svg" alt="orange start vector" class="star-icon">
+    </div>
+    <h3 class="rating-title">How did we do?</h3>
+    <p class="rating-description"> Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+    <div class="rating-num-wrapper">
+      <span class="rating" data-value="1">1</span>
+      <span class="rating" data-value="2">2</span>
+      <span class="rating" data-value="3">3</span>
+      <span class="rating selected" data-value="4">4</span>
+      <span class="rating" data-value="5">5</span>
+    </div>
+    <button type="button" id="submitBtn" class="submit-btn">submit</button>
+  </article>
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+  <article class="rating-wrapper sent-message">
+    <img src="./images/illustration-thank-you.svg" alt="payment vector illustartion" class="payment-icon" />
+    <p class="selected-rating">
+      You selected <span id="rate"></span> out of 5
+    </p>
+    <p class="important">Thank you!</p>
+    <p class="message">We appreciate you taking the time to give a rating. If you ever need more support, 
+    don’t hesitate to get in touch!</p>
+  </article>
+  <!-- Thank you state end -->
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">z83studio</a>.
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
